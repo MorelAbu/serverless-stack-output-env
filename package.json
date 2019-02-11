@@ -1,0 +1,57 @@
+{
+  "name": "serverless-stack-output-env",
+  "version": "0.1.0",
+  "description": "Serverless plugin to process AWS CloudFormation Stack Output into .env file",
+  "license": "Apache-2.0",
+  "author": "Morel Abuhazira",
+  "main": "dist",
+  "scripts": {
+    "clean": "rimraf dist",
+    "test": "jest",
+    "test:cover": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "tslint {src,test}/**/*.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morelabu/serverless-stack-output-env.git"
+  },
+  "keywords": [
+    "serverless",
+    "plugin",
+    "aws",
+    "cloudformation",
+    "stack",
+    "output",
+    "dotenv",
+    "reactapp"
+  ],
+  "dependencies": {
+    "tomlify-j0.4": "^2.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.5",
+    "@types/node": "^8.0.19",
+    "coveralls": "^2.13.1",
+    "dot-json": "^1.0.3",
+    "jasmine-data-provider": "^2.2.0",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.2",
+    "sinon": "^2.3.6",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ]
+  }
+}
