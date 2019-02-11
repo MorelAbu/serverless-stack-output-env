@@ -14,7 +14,7 @@ describe('File', () => {
   describe('Format', () => {
     using(
       [
-        {file: 'test.env', valid: true, type: 'env', data: 'foo=bar'},
+        {file: 'test.env', valid: true, type: 'env', data: 'REACT_APP_foo=bar'},
         {file: 'test.yaml', valid: true, type: 'yaml', data: `foo: bar\n`},
         {file: 'test.yml', valid: true, type: 'yaml', data: `foo: bar\n`},
         {file: 'test.json', valid: true, type: 'json', data: `{\n  "foo": "bar"\n}`},
@@ -45,7 +45,7 @@ describe('File', () => {
   describe('Format two keys', () => {
     using(
       [
-        {file: 'test.env', valid: true, type: 'env', data: 'foo=bar\nbar=foo'},
+        {file: 'test.env', valid: true, type: 'env', data: 'REACT_APP_foo=bar\nREACT_APP_bar=foo'},
         {file: 'test.yaml', valid: true, type: 'yaml', data: `foo: bar\nbar: foo\n`},
         {file: 'test.yml', valid: true, type: 'yaml', data: `foo: bar\nbar: foo\n`},
         {file: 'test.json', valid: true, type: 'json', data: `{\n  "foo": "bar",\n  "bar": "foo"\n}`},

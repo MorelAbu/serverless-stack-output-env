@@ -53,5 +53,12 @@
       "ts",
       "js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/morelabu/serverless-stack-output-env/issues"
+  },
+  "homepage": "https://github.com/morelabu/serverless-stack-output-env#readme",
+  "directories": {
+    "test": "test"
   }
 }
